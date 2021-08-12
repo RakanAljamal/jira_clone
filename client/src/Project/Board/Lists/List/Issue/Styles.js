@@ -25,7 +25,6 @@ export const Issue = styled.div`
   ${props =>
     props.isBeingDragged &&
     css`
-      transform: rotate(3deg);
       box-shadow: 5px 10px 30px 0px rgba(9, 30, 66, 0.15);
     `}
 `;

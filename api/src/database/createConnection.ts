@@ -4,7 +4,8 @@ import * as entities from 'entities';
 
 const createDatabaseConnection = (): Promise<Connection> =>
   createConnection({
-    type: 'postgres',
+    type: 'mysql',
+    charset: 'utf8mb4',
     host: process.env.DB_HOST,
     port: Number(process.env.DB_PORT),
     username: process.env.DB_USERNAME,
